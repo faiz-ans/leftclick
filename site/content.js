@@ -21,7 +21,7 @@ window.SITE_CONTENT = {
   hero: {
     brand: "Left Click",
     title: "A digital makeover for your home",
-    lede: "Privacy, fewer bills, and tech you actually own — built in Los Angeles with the gear you already have.",
+    lede: "Privacy, fewer bills, and tech you actually own — built in Los Angeles with gear you already have.",
     cta: "Get in touch",
   },
   outcomes: {
