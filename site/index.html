@@ -21,16 +21,32 @@
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Left Click home">
+      <a
+        class="brand"
+        href="#top"
+        data-content-aria="brand.homeLabel"
+        aria-label="Left Click home"
+      >
         <img src="assets/logo.png" alt="" width="40" height="40" />
-        <span>Left Click</span>
+        <span data-content="brand.name">Left Click</span>
       </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="#outcomes">Outcomes</a>
-        <a href="#craft">Craft</a>
-        <a href="#how">How it works</a>
-        <a href="#pricing">Pricing</a>
-        <a class="nav-cta" href="#contact">Contact</a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Open menu"
+      >
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav id="primary-nav" class="nav" aria-label="Primary">
+        <a href="#outcomes" data-content="nav.outcomes">Outcomes</a>
+        <a href="#craft" data-content="nav.craft">Craft</a>
+        <a href="#how" data-content="nav.how">How it works</a>
+        <a href="#pricing" data-content="nav.pricing">Pricing</a>
+        <a class="nav-cta" href="#contact" data-content="nav.contact">Contact</a>
       </nav>
     </header>
 
@@ -41,49 +57,69 @@
           <img
             class="hero-logo"
             src="assets/logo.png"
+            data-content-aria="brand.logoAlt"
             alt="Left Click logo"
             width="160"
             height="160"
           />
-          <p id="hero-brand" class="hero-brand">Left Click</p>
-          <h1 class="hero-title">
+          <p id="hero-brand" class="hero-brand" data-content="hero.brand">
+            Left Click
+          </p>
+          <h1 class="hero-title" data-content="hero.title">
             A digital makeover for your home.
           </h1>
-          <p class="hero-lede">
+          <p class="hero-lede" data-content="hero.lede">
             Privacy, fewer bills, and systems you actually own — built in Los
             Angeles with the tech you already have.
           </p>
-          <a class="btn" href="#contact">Get in touch</a>
+          <a class="btn" href="#contact" data-content="hero.cta">Get in touch</a>
         </div>
       </section>
 
       <section id="outcomes" class="section reveal" aria-labelledby="outcomes-heading">
         <div class="section-inner">
-          <p class="eyebrow">Outcomes</p>
-          <h2 id="outcomes-heading">What changes in your home</h2>
-          <p class="section-lede">
+          <p class="eyebrow" data-content="outcomes.eyebrow">Outcomes</p>
+          <h2 id="outcomes-heading" data-content="outcomes.heading">
+            What changes in your home
+          </h2>
+          <p class="section-lede" data-content="outcomes.lede">
             The point isn’t more gadgets. It’s a quieter digital life you control.
           </p>
-          <ul class="outcome-list">
+          <ul class="outcome-list" data-content-list="outcomes">
             <li>
               <strong>Keep your data at home</strong>
-              <span>Media, photos, and files stay on your network — not someone else’s cloud.</span>
+              <span
+                >Media, photos, and files stay on your network — not someone else’s
+                cloud.</span
+              >
             </li>
             <li>
               <strong>Cut subscriptions you don’t need</strong>
-              <span>Recreate streaming, storage, and sync at home when it makes sense.</span>
+              <span
+                >Recreate streaming, storage, and sync at home when it makes
+                sense.</span
+              >
             </li>
             <li>
               <strong>Own the setup</strong>
-              <span>Self-hosted tools and open-source software so you’re not locked in.</span>
+              <span
+                >Self-hosted tools and open-source software so you’re not locked
+                in.</span
+              >
             </li>
             <li>
               <strong>Make the everyday usable</strong>
-              <span>Email, calendars, spam, and shared family systems that actually work.</span>
+              <span
+                >Email, calendars, spam, and shared family systems that actually
+                work.</span
+              >
             </li>
             <li>
               <strong>Reuse before you buy</strong>
-              <span>Old laptops and drives get a second life — less cost, less waste.</span>
+              <span
+                >Old laptops and drives get a second life — less cost, less
+                waste.</span
+              >
             </li>
           </ul>
         </div>
@@ -91,15 +127,16 @@
 
       <section id="craft" class="section section-alt reveal" aria-labelledby="craft-heading">
         <div class="section-inner">
-          <p class="eyebrow">The craft</p>
-          <h2 id="craft-heading">What I build</h2>
-          <p class="section-lede">
+          <p class="eyebrow" data-content="craft.eyebrow">The craft</p>
+          <h2 id="craft-heading" data-content="craft.heading">What I build</h2>
+          <p class="section-lede" data-content="craft.lede">
             Hardware, software, and organization — scoped to what you actually need.
           </p>
-          <ul class="craft-list">
+          <ul class="craft-list" data-content-list="craft">
             <li>
               <strong>NAS &amp; backups</strong>
-              Central storage for documents, photos, media, and permissions that make sense.
+              Central storage for documents, photos, media, and permissions that make
+              sense.
             </li>
             <li>
               <strong>Home theater PC</strong>
@@ -111,7 +148,8 @@
             </li>
             <li>
               <strong>Digital organization</strong>
-              Email rules, spam cleanup, calendars, and file systems you can live with.
+              Email rules, spam cleanup, calendars, and file systems you can live
+              with.
             </li>
           </ul>
         </div>
@@ -119,9 +157,9 @@
 
       <section id="how" class="section reveal" aria-labelledby="how-heading">
         <div class="section-inner">
-          <p class="eyebrow">Process</p>
-          <h2 id="how-heading">How it works</h2>
-          <ol class="steps">
+          <p class="eyebrow" data-content="how.eyebrow">Process</p>
+          <h2 id="how-heading" data-content="how.heading">How it works</h2>
+          <ol class="steps" data-content-list="steps">
             <li>
               <span class="step-num">1</span>
               <div>
@@ -133,14 +171,20 @@
               <span class="step-num">2</span>
               <div>
                 <strong>Scope</strong>
-                <p>Clear plan, realistic options, and a preference for reuse over buying new.</p>
+                <p>
+                  Clear plan, realistic options, and a preference for reuse over buying
+                  new.
+                </p>
               </div>
             </li>
             <li>
               <span class="step-num">3</span>
               <div>
                 <strong>Build</strong>
-                <p>I set up the hardware and software — often combining services on one machine.</p>
+                <p>
+                  I set up the hardware and software — often combining services on one
+                  machine.
+                </p>
               </div>
             </li>
             <li>
@@ -163,18 +207,26 @@
 
       <section id="pricing" class="section section-alt reveal" aria-labelledby="pricing-heading">
         <div class="section-inner">
-          <p class="eyebrow">Pricing</p>
-          <h2 id="pricing-heading">Straightforward rates</h2>
-          <p class="section-lede">
+          <p class="eyebrow" data-content="pricing.eyebrow">Pricing</p>
+          <h2 id="pricing-heading" data-content="pricing.heading">
+            Straightforward rates
+          </h2>
+          <p class="section-lede" data-content="pricing.lede">
             No surprise packages. You see the numbers up front.
           </p>
           <div class="pricing-block">
-            <p class="price-rate"><span>$60</span> / hour</p>
-            <p class="price-min">3-hour minimum · <strong>$180</strong></p>
-            <p class="price-note">
-              Hardware and software costs are paid by you. I’ll present reasonable options and
-              steer toward the lowest-cost setup that still does the job — preferably gear you
-              already own.
+            <p class="price-rate">
+              <span data-content="pricing.rate">$60</span
+              ><span data-content="pricing.rateSuffix"> / hour</span>
+            </p>
+            <p class="price-min">
+              <span data-content="pricing.minimum">3-hour minimum · </span
+              ><strong data-content="pricing.minimumAmount">$180</strong>
+            </p>
+            <p class="price-note" data-content="pricing.note">
+              Hardware and software costs are paid by you. I’ll present reasonable
+              options and steer toward the lowest-cost setup that still does the job —
+              preferably gear you already own.
             </p>
           </div>
         </div>
@@ -182,9 +234,11 @@
 
       <section id="contact" class="section reveal" aria-labelledby="contact-heading">
         <div class="section-inner">
-          <p class="eyebrow">Contact</p>
-          <h2 id="contact-heading">Start a conversation</h2>
-          <p class="section-lede">
+          <p class="eyebrow" data-content="contact.eyebrow">Contact</p>
+          <h2 id="contact-heading" data-content="contact.heading">
+            Start a conversation
+          </h2>
+          <p class="section-lede" data-content="contact.lede">
             Serving Los Angeles. Send a note about what you’re hoping to fix or build.
           </p>
 
@@ -197,24 +251,39 @@
               novalidate
             >
               <label>
-                Name
+                <span data-content="contact.nameLabel">Name</span>
                 <input type="text" name="name" autocomplete="name" required />
               </label>
               <label>
-                Email
+                <span data-content="contact.emailLabel">Email</span>
                 <input type="email" name="email" autocomplete="email" required />
               </label>
               <label>
-                Message
+                <span data-content="contact.messageLabel">Message</span>
                 <textarea name="message" rows="5" required></textarea>
               </label>
-              <button class="btn" type="submit">Send message</button>
-              <p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p>
+              <button class="btn" type="submit" data-content="contact.submit">
+                Send message
+              </button>
+              <p
+                id="form-status"
+                class="form-status"
+                role="status"
+                aria-live="polite"
+                hidden
+              ></p>
             </form>
 
             <aside class="contact-aside">
-              <p>Prefer email?</p>
-              <a class="mailto" href="mailto:contact@theleft.click">contact@theleft.click</a>
+              <p data-content="contact.preferEmail">Prefer email?</p>
+              <a
+                class="mailto"
+                href="mailto:contact@theleft.click"
+                data-content="contact.email"
+                data-content-href="contact.email"
+                data-content-prefix="mailto:"
+                >contact@theleft.click</a
+              >
             </aside>
           </div>
         </div>
@@ -223,18 +292,34 @@
 
     <footer class="site-footer">
       <div class="footer-inner">
-        <p class="footer-wink">Some clicks lean left.</p>
+        <p class="footer-wink" data-content="footer.wink">Some clicks lean left.</p>
         <p>
-          <a href="https://www.youtube.com/@TheLeftClick" rel="noopener noreferrer"
+          <a
+            href="https://www.youtube.com/@TheLeftClick"
+            rel="noopener noreferrer"
+            data-content="footer.youtube"
+            data-content-href="footer.youtubeUrl"
             >YouTube</a
           >
           <span class="sep" aria-hidden="true">·</span>
-          <a href="mailto:contact@theleft.click">contact@theleft.click</a>
+          <a
+            href="mailto:contact@theleft.click"
+            data-content="footer.email"
+            data-content-href="footer.email"
+            data-content-prefix="mailto:"
+            >contact@theleft.click</a
+          >
         </p>
-        <p class="footer-copy">&copy; <span id="year"></span> Left Click · Los Angeles</p>
+        <p class="footer-copy">
+          &copy; <span id="year"></span>
+          <span data-content="footer.copySuffix">Left Click · Los Angeles</span>
+        </p>
       </div>
     </footer>
 
+    <script src="content.js"></script>
+    <script src="content-bind.js"></script>
+    <script src="nav.js"></script>
     <script src="form.js" defer></script>
     <script>
       document.getElementById("year").textContent = String(new Date().getFullYear());

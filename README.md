@@ -19,6 +19,10 @@ Open [http://localhost:8080](http://localhost:8080).
 
 Any static server works (`npx serve site`, etc.).
 
+## Editing copy
+
+Page text lives in [`site/content.js`](site/content.js) (`window.SITE_CONTENT`). Edit strings there and reload — [`site/content-bind.js`](site/content-bind.js) fills matching `data-content` / list hooks in the HTML. Fallback copy remains in `index.html` if the content script fails.
+
 ## Formspree setup
 
 The inquiry form posts to Formspree:
