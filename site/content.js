@@ -20,8 +20,8 @@ window.SITE_CONTENT = {
   },
   hero: {
     brand: "Left Click",
-    title: "A digital makeover for your home.",
-    lede: "Privacy, fewer bills, and systems you actually own — built in Los Angeles with the tech you already have.",
+    title: "A digital makeover for your home",
+    lede: "Privacy, fewer bills, and tech you actually own — built in Los Angeles with the gear you already have.",
     cta: "Get in touch",
   },
   outcomes: {
@@ -30,24 +30,28 @@ window.SITE_CONTENT = {
     lede: "The point isn’t more gadgets. It’s a quieter digital life you control.",
     items: [
       {
-        title: "Keep your data at home",
-        body: "Media, photos, and files stay on your network — not someone else’s cloud.",
+        title: "Make your data yours again",
+        body: "Your media, photos, and files stay on your secured network — not someone else’s cloud.",
       },
       {
-        title: "Cut subscriptions you don’t need",
-        body: "Recreate streaming, storage, and sync at home when it makes sense.",
+        title: "No more subscriptions",
+        body: "Keep the services, ditch the monthly bill. Streaming, cloud storage, etc. — no tech company involved.",
       },
       {
-        title: "Own the setup",
-        body: "Self-hosted tools and open-source software so you’re not locked in.",
+        title: "Know your tech",
+        body: "Enjoy the peace-of-mind of your tech only serving you. Open-source, on trusted hardware.",
       },
       {
-        title: "Make the everyday usable",
-        body: "Email, calendars, spam, and shared family systems that actually work.",
+        title: "Digitally declutter",
+        body: "Emails go where they should. Family calendars stay synced. All your files in one place, and more.",
       },
       {
-        title: "Reuse before you buy",
-        body: "Old laptops and drives get a second life — less cost, less waste.",
+        title: "Cut down on e-waste",
+        body: "Old laptops and hard drives get a second life — less cost, less waste.",
+      },
+      {
+        title: "Unlock new tools",
+        body: "Do what proprietary tech won’t let you. Tag important docs. Edit PDFs for free. Go through photo albums on your TV.",
       },
     ],
   },
@@ -57,20 +61,20 @@ window.SITE_CONTENT = {
     lede: "Hardware, software, and organization — scoped to what you actually need.",
     items: [
       {
-        title: "NAS & backups",
-        body: "Central storage for documents, photos, media, and permissions that make sense.",
+        title: "Storage & App Server",
+        body: "Free up phone/laptop storage and CPUs. Access files and run apps from a dedicated device in the corner of your home.",
       },
       {
-        title: "Home theater PC",
-        body: "A living-room media setup without ads, tracking, or content algorithms.",
+        title: "Living-Room Media Console",
+        body: "A TV interface for media, music, photo albums, games, and streaming apps — without ads, data collection, or content algorithms.",
       },
       {
-        title: "Network basics",
-        body: "DNS and ad/tracker blocking, VPN, and clearer home network hygiene.",
+        title: "Network Upgrades",
+        body: "Block ads, block trackers, encrypt traffic, secure tunnels, and improve overall network hygiene.",
       },
       {
-        title: "Digital organization",
-        body: "Email rules, spam cleanup, calendars, and file systems you can live with.",
+        title: "Digital Organization & Cleanup",
+        body: "Apps, automatic backups, email rules, spam filters, calendars, and file sorting that work for you",
       },
     ],
   },
@@ -79,41 +83,41 @@ window.SITE_CONTENT = {
     heading: "How it works",
     steps: [
       {
-        title: "Free conversation",
-        body: "We talk through what you want and what you already have.",
+        title: "Consultation",
+        body: "Free 15-minute conversation. We talk through what you're looking for and what you already have.",
       },
       {
         title: "Scope",
-        body: "Clear plan, realistic options, and a preference for reuse over buying new.",
+        body: "I provide a plan with realistic options to build what you need —  I steer towards low-cost solutions: using existing hardware when available, open-source software, and consolidating services onto fewer devices.",
       },
       {
         title: "Build",
-        body: "I set up the hardware and software — often combining services on one machine.",
+        body: "I create the requested build. This could involve extended work at your home, and may require your input.",
       },
       {
         title: "Walkthrough",
-        body: "Live demo plus simple docs so you know what you own.",
+        body: "I walk you through the setup to show you what you now own and how to use it. If requested, I will leave you with usage manuals/guides to help your understanding further.",
       },
       {
-        title: "Optional support",
-        body: "Ongoing maintenance if you want it later.",
+        title: "Ongoing Support (Optional)",
+        body: "Upon request, I can tweak your setup, add new features, or help with maintenance.",
       },
     ],
   },
   pricing: {
     eyebrow: "Pricing",
-    heading: "Straightforward rates",
-    lede: "No surprise packages. You see the numbers up front.",
+    heading: "Flat rate",
+    lede: "",
     rate: "$60",
     rateSuffix: " / hour",
     minimum: "3-hour minimum · ",
     minimumAmount: "$180",
-    note: "Hardware and software costs are paid by you. I’ll present reasonable options and steer toward the lowest-cost setup that still does the job — preferably gear you already own.",
+    note: "Any hardware and software purchases are paid by you. I'll steer toward the lowest-cost setup that still fits your needs — preferably using gear you already own.",
   },
   contact: {
     eyebrow: "Contact",
-    heading: "Start a conversation",
-    lede: "Serving Los Angeles. Send a note about what you’re hoping to fix or build.",
+    heading: "Reach Out",
+    lede: "Serving Los Angeles. Let me know what you’re hoping to fix or build.",
     nameLabel: "Name",
     emailLabel: "Email",
     messageLabel: "Message",
@@ -122,7 +126,7 @@ window.SITE_CONTENT = {
     email: "contact@theleft.click",
   },
   footer: {
-    wink: "Some clicks lean left.",
+    wink: "Take back what's yours",
     youtube: "YouTube",
     youtubeUrl: "https://www.youtube.com/@TheLeftClick",
     email: "contact@theleft.click",
