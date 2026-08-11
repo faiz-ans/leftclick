@@ -92,10 +92,10 @@ textarea:focus-visible {
   top: 0;
   z-index: 50;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  gap: 0.75rem 1rem;
+  gap: 1rem;
   padding: 0.85rem clamp(1rem, 4vw, 2.5rem);
   background: rgba(43, 43, 43, 0.92);
   backdrop-filter: blur(10px);
@@ -127,12 +127,14 @@ textarea:focus-visible {
   width: 2.75rem;
   height: 2.75rem;
   margin-left: auto;
+  margin-block: -0.25rem;
   padding: 0;
   border: 1px solid rgba(85, 85, 85, 0.95);
   border-radius: 0.4rem;
   background: rgba(0, 0, 0, 0.28);
   color: var(--text);
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .nav-toggle-bars,
@@ -180,15 +182,21 @@ textarea:focus-visible {
 }
 
 .nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   gap: 0.35rem;
-  width: 100%;
   max-height: 0;
-  padding: 0;
+  margin: 0;
+  padding: 0 clamp(1rem, 4vw, 2.5rem);
   font-size: 0.95rem;
   text-align: center;
+  background: rgba(43, 43, 43, 0.97);
+  border-bottom: 1px solid transparent;
   opacity: 0;
   overflow: hidden;
   visibility: hidden;
@@ -197,12 +205,14 @@ textarea:focus-visible {
     opacity 0.28s var(--ease),
     max-height 0.28s var(--ease),
     padding 0.28s var(--ease),
+    border-color 0.28s var(--ease),
     visibility 0.28s var(--ease);
 }
 
 .nav.is-open {
   max-height: 22rem;
-  padding: 0.5rem 0 0.25rem;
+  padding: 0.75rem clamp(1rem, 4vw, 2.5rem) 1rem;
+  border-bottom-color: rgba(85, 85, 85, 0.55);
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -227,9 +237,10 @@ textarea:focus-visible {
   border-radius: 999px;
   font-weight: 700;
   text-align: center;
+  transition: background 0.2s var(--ease), color 0.2s var(--ease);
 }
 
-.nav-cta:hover {
+.nav a.nav-cta:hover {
   background: var(--coral-soft);
   color: #1a1a1a !important;
 }
@@ -241,6 +252,7 @@ textarea:focus-visible {
 
   .nav,
   .nav.is-open {
+    position: static;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -251,6 +263,8 @@ textarea:focus-visible {
     gap: 1.15rem;
     font-size: 0.92rem;
     text-align: left;
+    background: transparent;
+    border-bottom: 0;
     opacity: 1;
     overflow: visible;
     visibility: visible;
@@ -267,12 +281,12 @@ textarea:focus-visible {
     background: transparent;
   }
 
-  .nav .nav-cta {
+  .nav a.nav-cta {
     padding: 0.4rem 0.85rem;
     border-radius: 999px;
   }
 
-  .nav .nav-cta:hover {
+  .nav a.nav-cta:hover {
     background: var(--coral-soft);
   }
 }

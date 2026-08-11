@@ -126,7 +126,7 @@ window.SITE_CONTENT = {
     email: "contact@theleft.click",
   },
   footer: {
-    wink: "Take back what's yours",
+    wink: "Take back what's ours",
     youtube: "YouTube",
     youtubeUrl: "https://www.youtube.com/@TheLeftClick",
     email: "contact@theleft.click",
