@@ -1,6 +1,6 @@
 window.SITE_CONTENT = {
   meta: {
-    title: "Left Click — Digital makeover for your home · Los Angeles",
+    title: "Left Click — Tech that makes sense · Los Angeles",
     description:
       "Left Click builds home digital makeovers in Los Angeles — privacy, fewer subscriptions, organized media and files, using open-source tools and the hardware you already own.",
   },
@@ -20,13 +20,13 @@ window.SITE_CONTENT = {
   },
   hero: {
     brand: "Left Click",
-    title: "A digital makeover for your home",
+    title: "Tech that makes sense",
     lede: "Privacy, fewer bills, and tech you actually own — built in Los Angeles with gear you already have.",
     cta: "Get in touch",
   },
   outcomes: {
     eyebrow: "Outcomes",
-    heading: "What changes in your home",
+    heading: "What changes for you",
     lede: "The point isn’t more gadgets. It’s a quieter digital life you control.",
     items: [
       {

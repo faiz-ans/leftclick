@@ -67,7 +67,7 @@ Confirm that the `contact@theleft.click` mailbox is live before sharing the site
 ## Brand
 
 - Palette: `#F08080` `#FBC0B5` `#2B2B2B` `#555555` `#F5F5F5`
-- Logo: [`site/assets/logo.png`](site/assets/logo.png)
+- Logo: [`site/assets/logo-sq.svg`](site/assets/logo-sq.svg) (PNG: [`site/assets/logo-sq.png`](site/assets/logo-sq.png) for GitHub social preview / touch icons)
 - YouTube: [youtube.com/@TheLeftClick](https://www.youtube.com/@TheLeftClick)
 
 ## Planning

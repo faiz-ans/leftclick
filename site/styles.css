@@ -118,6 +118,8 @@ textarea:focus-visible {
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .nav-toggle {
@@ -345,9 +347,12 @@ textarea:focus-visible {
 
 .hero-logo {
   width: clamp(7.5rem, 22vw, 10rem);
-  height: auto;
+  height: clamp(7.5rem, 22vw, 10rem);
+  aspect-ratio: 1;
+  object-fit: cover;
   margin: 0 auto 1.25rem;
   border-radius: 50%;
+  overflow: hidden;
   box-shadow: 0 0 0 1px rgba(251, 192, 181, 0.25), 0 24px 60px rgba(0, 0, 0, 0.35);
 }
 
